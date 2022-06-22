@@ -1,0 +1,52 @@
+.featuredEl {
+  background-color: #f3f0f0;
+  height: auto;
+}
+.books {
+  display: flex;
+  /* background-color: red; */
+  justify-content: center;
+}
+
+.bookTrio {
+  width: 550px;
+  height: 450px;
+  object-fit: cover;
+  /* background-color: lawngreen; */
+}
+
+.featuredText {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  /* align-items: center; */
+}
+
+.featuredTitle {
+  padding: 0;
+  font-family: "Nuosu SIL", serif;
+  font-size: 60px;
+  letter-spacing: 2.5px;
+  margin-bottom: 30px;
+}
+
+.lineBreak {
+  width: 100px;
+  height: 0px;
+  padding: 0;
+  border: 0.5px solid black;
+  margin-bottom: 30px;
+}
+
+.description {
+  color: rgb(94, 94, 94);
+  padding: 0;
+  margin-bottom: 30px;
+}
+
+.readMore {
+  border: 2px solid rgb(160, 158, 158);
+  width: fit-content;
+  padding: 8px 20px;
+  color: rgb(94, 94, 94);
+}

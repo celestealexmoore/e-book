@@ -1,8 +1,14 @@
+import "./assets/modules/reset.css";
+import Navbar from "./components/Navbar";
+import Featured from "./components/Featured";
+import Books from "./components/Books"
 
 function App() {
   return (
-    <div className="App">
-      <h1>hello world</h1>
+    <div>
+      <Navbar />
+      <Featured />
+      {/* <Books/> */}
     </div>
   );
 }

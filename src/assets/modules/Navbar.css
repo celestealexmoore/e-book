@@ -1,0 +1,30 @@
+.navParent {
+  height: 60px;
+}
+
+.navTitle {
+  font-family: 'IBM Plex Serif', serif;
+  font-size: 30px;
+  margin-left: -40px;
+  align-self: center;
+}
+
+.logo {
+  max-width: 100%;
+  width: 90px;
+  height: 50px;
+  object-fit: cover;
+  /* background-color: lawngreen; */
+}
+
+.navUl {
+  align-self: center;
+}
+
+.navUl a{
+  color: rgb(94, 94, 94);
+}
+
+.navUl a:hover {
+  text-decoration: underline;
+}
