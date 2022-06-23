@@ -9,7 +9,7 @@ const Navbar = () => {
         <div className="col-1">
           <img alt="Book Logo" className="logo" src={Logo}></img>
         </div>
-        <div className="col-7 navTitle">Booksy</div>
+        <div className="col navTitle">Two Moore Books</div>
 
         <div className="col navUl">
           <div className="row ">
@@ -23,6 +23,15 @@ const Navbar = () => {
               Books
             </a>
             <i className="col bi bi-search"></i>
+            {/* <div class="col input-group">
+              <div class="form-outline">
+                <input type="search" id="form1" class="form-control" />
+              </div>
+              <button type="button" class="btn btn-primary">
+                <i class="bi bi-search"></i>
+              </button>
+            </div> */}
+
           </div>
         </div>
       </div>

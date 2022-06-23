@@ -1,10 +1,10 @@
 .featuredEl {
-  background-color: #f3f0f0;
+  background-color: var(--off-white);
   height: auto;
+  padding: 30px;
 }
 .books {
   display: flex;
-  /* background-color: red; */
   justify-content: center;
 }
 .bookTrio {
@@ -20,6 +20,7 @@
 .featuredTitle {
   padding: 0;
   font-family: "Nuosu SIL", serif;
+  color: var(--old-mauve);
   font-size: 60px;
   letter-spacing: 2.5px;
   margin-bottom: 30px;
@@ -28,19 +29,22 @@
   width: 100px;
   height: 0px;
   padding: 0;
-  border: 0.5px solid black;
+  border: 0.5px solid var(--old-mauve);
   margin-bottom: 30px;
 }
 .description {
-  color: rgb(94, 94, 94);
   padding: 0;
   margin-bottom: 30px;
+  font-family: 'Caveat', cursive;
+  color: var(--copper-rose);
+  /* color: var(--old-mauve); */
+  font-size: 25px;
 }
 .readMore, .readMoreBtm {
-  border: 2px solid rgb(160, 158, 158);
+  border: 2px solid var(--navy);
   width: fit-content;
   padding: 8px 20px;
-  color: rgb(94, 94, 94);
+  color: var(--navy);
 }
 .bottomFeature {
   margin: 100px 0px;
@@ -48,7 +52,7 @@
 .leftFeature, .rightFeature {
   margin:0;
   padding: 0;
-  background-color: #f3f0f0;
+  background-color: var(--off-white);
   height: 300%;
 }
 .leftFeature img, .rightFeature img {
@@ -60,6 +64,4 @@
   position: absolute;
   margin-left: -25%;
   margin-top: 15%;
-  /* margin-left: -300px;
-  margin-top: 220px; */
 }

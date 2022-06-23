@@ -17,13 +17,23 @@ const Featured = () => {
           </div>
 
           <div className="col featuredText">
-            <h1 className="featuredTitle">This Month</h1>
+            <h1 className="featuredTitle">Coming Soon</h1>
             <div className="lineBreak"></div>
             <p className="description">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-              eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
-              enim ad minim veniam, quis nostrud exercitation ullamco laboris
-              nisi ut aliquip ex ea commodo consequat.
+              So you've been following me on Instagram for like 5 years now and
+              you're all, "How's that book coming along, Brian?" Well, it's
+              finally here. And it's worth the wait! You're able to access all
+              my time-consuming content for the free...and I'm so happy to share
+              these gifts with you!
+              <br />
+              <br />
+              Two Moore Books is my attempt to capture and preserve moments of
+              my life most dear to me. Here, you'll find a ton of both pastry and dinner recipes: some
+              super southern, some vegan, gluten-free, even some for lactating
+              mamas! You'll also find an array of children's books with topics
+              ranging from bedtime and potty-time routines to handling deep
+              grief.
+              <br/>
             </p>
             <button className="readMore">READ MORE</button>
           </div>

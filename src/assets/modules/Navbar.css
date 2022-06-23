@@ -7,14 +7,13 @@
   font-size: 30px;
   margin-left: -40px;
   align-self: center;
+  color: var(--navy);
 }
 
 .logo {
-  max-width: 100%;
-  width: 90px;
-  height: 50px;
+  width: 100%;
+  height: 58px;
   object-fit: cover;
-  /* background-color: lawngreen; */
 }
 
 .navUl {
@@ -22,7 +21,9 @@
 }
 
 .navUl a{
-  color: rgb(94, 94, 94);
+  color: var(--navy);
+  font-family: "Nuosu SIL", serif;
+  font-size: 20px;
 }
 
 .navUl a:hover {

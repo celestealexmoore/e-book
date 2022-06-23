@@ -1,4 +1,5 @@
 import "./assets/modules/reset.css";
+import "./assets/modules/index.css";
 import Navbar from "./components/Navbar";
 import Featured from "./components/Featured";
 import Books from "./components/Books"
