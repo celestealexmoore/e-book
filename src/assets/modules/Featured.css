@@ -7,21 +7,16 @@
   /* background-color: red; */
   justify-content: center;
 }
-
 .bookTrio {
   width: 550px;
   height: 450px;
   object-fit: cover;
-  /* background-color: lawngreen; */
 }
-
 .featuredText {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
-  /* align-items: center; */
 }
-
 .featuredTitle {
   padding: 0;
   font-family: "Nuosu SIL", serif;
@@ -29,7 +24,6 @@
   letter-spacing: 2.5px;
   margin-bottom: 30px;
 }
-
 .lineBreak {
   width: 100px;
   height: 0px;
@@ -37,16 +31,35 @@
   border: 0.5px solid black;
   margin-bottom: 30px;
 }
-
 .description {
   color: rgb(94, 94, 94);
   padding: 0;
   margin-bottom: 30px;
 }
-
-.readMore {
+.readMore, .readMoreBtm {
   border: 2px solid rgb(160, 158, 158);
   width: fit-content;
   padding: 8px 20px;
   color: rgb(94, 94, 94);
+}
+.bottomFeature {
+  margin: 100px 0px;
+}
+.leftFeature, .rightFeature {
+  margin:0;
+  padding: 0;
+  background-color: #f3f0f0;
+  height: 300%;
+}
+.leftFeature img, .rightFeature img {
+  height: 300px;
+  object-fit: cover;
+  width: 100%;
+}
+.readMoreBtm {
+  position: absolute;
+  margin-left: -25%;
+  margin-top: 15%;
+  /* margin-left: -300px;
+  margin-top: 220px; */
 }
