@@ -1,0 +1,66 @@
+.aboutContainer {
+  display: flex;
+  justify-content: center;
+}
+.pageContent {
+  margin-top: 80px;
+}
+.aboutTitle {
+  display: flex;
+  justify-content: center;
+  padding: 15px;
+  height: 300px;
+  position: absolute;
+  font-family: "Playfair Display SC", serif;
+  letter-spacing: 2.5px;
+  color: white;
+  font-size: 40px;
+  background-color: var(--navy);
+  z-index: 0;
+  animation-name: aboutTitleAnim;
+  animation-duration: 1s;
+}
+@keyframes aboutTitleAnim {
+  0% {
+    background-color: white;
+    color: white;
+  }
+  100% {
+    background-color: var(--navy);
+  }
+}
+.aboutContent {
+  padding: 20px;
+  border: 1px solid var(--old-mauve);
+  background-color: white;
+  margin-bottom: 30px;
+  min-width: 400px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items:center;
+  height: auto;
+  z-index: 1;
+  /* box-shadow: 0px 0px 10px 1px var(--old-mauve); */
+
+}
+.aboutContent h1 {
+  align-self: center;
+  font-family: "Nuosu SIL", serif;
+  color: var(--old-mauve);
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+.aboutContent p {
+  font-family: "Nuosu SIL", serif;
+  color: var(--old-mauve);
+  font-size: 16px;
+  text-align: center;
+}
+.famPhoto {
+  max-width: 400px;
+  z-index: 1;
+  border: 1px solid var(--navy);
+  padding: 15px;
+}
