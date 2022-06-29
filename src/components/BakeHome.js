@@ -18,7 +18,7 @@ import page16 from "../assets/photos/baking-at-home/16.png";
 import page17 from "../assets/photos/baking-at-home/17.png";
 import page18 from "../assets/photos/baking-at-home/18.png";
 
-const BakeHome = () => {
+export default function BakeHome() {
   return (
     <div className="container-fluid wholeContainer">
       <div className="row ">
@@ -78,4 +78,4 @@ const BakeHome = () => {
   );
 };
 
-export default BakeHome;
+// export default BakeHome;

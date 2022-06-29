@@ -16,6 +16,7 @@
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
+  min-width: 370px;
 }
 .featuredTitle {
   padding: 0;
@@ -64,4 +65,12 @@
   position: absolute;
   margin-left: -25%;
   margin-top: 15%;
+}
+
+@media only screen and (max-width: 979px) {
+  .featuredText {
+    margin-top: -90px;
+    text-align: center;
+    align-items: center;
+  }
 }

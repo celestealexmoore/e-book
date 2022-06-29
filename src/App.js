@@ -4,16 +4,26 @@ import Navbar from "./components/Navbar";
 import Featured from "./components/Featured";
 import About from "./components/About";
 import BakeHome from "./components/BakeHome";
-import Books from "./components/Books";
+// import Books from "./components/Books";
 
 function App() {
+  let Component;
+  console.log(window.location)
+  switch (window.location.pathname) {
+    case "/":
+      Component = <Featured />;
+      break;
+    case "/About":
+      Component = <About />;
+      break;
+    case "/Books":
+      Component = <BakeHome />;
+      break;
+  }
   return (
     <div>
       <Navbar />
-      <About />
-      {/* <Featured /> */}
-      {/* <BakeHome /> */}
-      {/* <Books/> */}
+      {Component}
     </div>
   );
 }
