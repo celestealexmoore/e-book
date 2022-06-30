@@ -77,5 +77,3 @@ export default function BakeHome() {
     </div>
   );
 };
-
-// export default BakeHome;

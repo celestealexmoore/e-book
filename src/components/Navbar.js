@@ -21,9 +21,9 @@ const Navbar = () => {
         <li className="nav-item dropdown">
           <a href="#" className="nav-link dropdown-toggle" data-toggle="dropdown">Books</a>
           <div className="dropdown-menu dropdown-menu-lg-end">
-              <a href="#" className="dropdown-item">I'm Daddy's Love</a>
-              <a href="/Books" className="dropdown-item">Moore Baking At Home</a>
-              <a href="#" className="dropdown-item">Hey Doll Baby</a>
+              <a href="/Im-Daddys-Love" className="dropdown-item">I'm Daddy's Love</a>
+              <a href="/BakeHome" className="dropdown-item">Moore Baking At Home</a>
+              <a href="/Hey-Doll-Baby" className="dropdown-item">Hey Doll Baby</a>
           </div>
         </li>
         <li>
