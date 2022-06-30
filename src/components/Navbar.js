@@ -3,6 +3,7 @@ import Logo from "../assets/photos/logo.png";
 import "../assets/modules/Navbar.css";
 
 const Navbar = () => {
+
   return (
     <div className="parentContainer">
       <div className="titleParent">
@@ -17,16 +18,25 @@ const Navbar = () => {
         <li>
           <a href="/About">About</a>
         </li>
-        <li>
-          <a href="/Books">Books</a>
+        <li className="nav-item dropdown">
+          <a href="#" className="nav-link dropdown-toggle" data-toggle="dropdown">Books</a>
+          <div className="dropdown-menu dropdown-menu-lg-end">
+              <a href="#" className="dropdown-item">I'm Daddy's Love</a>
+              <a href="/Books" className="dropdown-item">Moore Baking At Home</a>
+              <a href="#" className="dropdown-item">Hey Doll Baby</a>
+          </div>
         </li>
         <li>
-          <div class="col input-group">
-            <div class="form-outline">
-              <input type="search" id="form1" class="form-control shadow bg-white rounded" />
+          <div className="col input-group">
+            <div className="form-outline">
+              <input
+                type="search"
+                id="form1"
+                className="form-control shadow bg-white rounded"
+              />
             </div>
-            <button type="button" class="btn btn searchIcon">
-              <i class="bi bi-search"></i>
+            <button type="button" className="btn btn searchIcon">
+              <i className="bi bi-search"></i>
             </button>
           </div>
           {/* <i className="col bi bi-search"></i> */}

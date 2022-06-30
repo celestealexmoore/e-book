@@ -17,7 +17,7 @@ const Featured = () => {
           </div>
 
           <div className="col featuredText">
-            <h1 className="featuredTitle">Coming Soon</h1>
+            <h1 className="featuredTitle">This Month</h1>
             <div className="lineBreak"></div>
             <p className="description">
               So you've been following me on Instagram for like 5 years now and
@@ -44,12 +44,12 @@ const Featured = () => {
         <div className="row d-flex justify-content-around">
           <div className="col-5 leftFeature">
             <img src={leftDiv} alt="" className="imgLeft"></img>
-            <button className="readMoreBtm">READ MORE</button>
+            {/* <button className="readMoreBtm">READ MORE</button> */}
           </div>
 
           <div className="col-5 rightFeature">
             <img src={rightDiv} alt="" className="imgRight"></img>
-            <button className="readMoreBtm">READ MORE</button>
+            {/* <button className="readMoreBtm">READ MORE</button> */}
           </div>
         </div>
       </div>

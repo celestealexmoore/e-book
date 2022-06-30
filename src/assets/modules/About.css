@@ -1,8 +1,14 @@
+.rowVPH {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
 .aboutTitle {
   display: flex;
   justify-content: center;
   padding: 15px;
   height: 300px;
+  max-width: 100%;
   position: absolute;
   font-family: "Playfair Display SC", serif;
   letter-spacing: 2.5px;
@@ -24,20 +30,10 @@
   z-index: 1;
   max-width: 400px;
   min-width: 320px;
-  animation: famPhotoAnim 3s forwards;
 }
 .famPhoto {
   width: 100%;
-  /* border: 1px solid var(--old-mauve); */
 }
-/* @keyframes famPhotoAnim {
-  0% {
-    background-color: green;
-  }
-  100% {
-    background-color: pink;
-  }
-} */
 .aboutContent {
   padding: 20px;
   border: 1px solid var(--old-mauve);
@@ -62,6 +58,59 @@
   font-size: 16px;
   text-align: center;
 }
+/* .sketchArt {
+  max-width: 350px;
+  position: absolute;
+  margin-top: 49vh;
+  margin-left: 280px;
+} */
+.sketchArt {
+  max-width: 350px;
+  position: relative;
+  margin-top: -15vh;
+  margin-left: 75vh;
+}
+.videoParent {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  margin-top: 20px;
+}
+.aboutContent2 {
+  padding: 20px;
+  border: 1px solid var(--old-mauve);
+  background-color: white;
+  margin: 175px 0;
+  min-width: 350px;
+  height: fit-content;
+  align-self: center;
+  z-index: 1;
+}
+.aboutContent2 h1 {
+  align-self: center;
+  font-family: "Nuosu SIL", serif;
+  color: var(--old-mauve);
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+.aboutContent2 p {
+  font-family: "Nuosu SIL", serif, monospace;
+  color: var(--old-mauve);
+  font-size: 16px;
+  text-align: center;
+}
+.iconParent {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.logoIcons {
+  max-width: 50px;
+  margin: 0 10px;
+  margin-bottom: 20px;
+}
+
 @media only screen and (max-width: 1140px) {
   .aboutContent {
     margin-top: 15px;

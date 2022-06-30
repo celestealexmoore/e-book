@@ -37,9 +37,14 @@
 /* .navUl li i {
   margin-right: 2rem;
 } */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+.dropdown-menu {
+  margin-top: 0;
+}
 
-/* bootstrap adjustment for text input blue glow */
-
+/* bootstrap adjustment for default input blue glow. Reset to my preferences.*/
 textarea:focus,
 input[type="text"]:focus,
 input[type="password"]:focus,
@@ -56,19 +61,15 @@ input[type="search"]:focus,
 input[type="search"],
 input[type="tel"]:focus,
 input[type="color"]:focus,
-.uneditable-input:focus {   
+.uneditable-input:focus {
   border-color: var(--copper-rose);
   color: var(--copper-rose);
-  /* text-decoration: none !important; */
-  /* box-shadow: 0 1px 1px rgba(0, 0, 0, 0.075) inset, 0 0 8px rgba(126, 239, 104, 0.6); */
   outline: 0 none;
 }
-
 .searchIcon {
   border: none;
   width: fit-content;
 }
-
 .searchIcon:active {
   background-color: var(--platinum);
 }

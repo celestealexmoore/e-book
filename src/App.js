@@ -1,14 +1,18 @@
+// current console errors are bootstrap-related bugs.
+
 import "./assets/modules/reset.css";
 import "./assets/modules/index.css";
 import Navbar from "./components/Navbar";
 import Featured from "./components/Featured";
 import About from "./components/About";
 import BakeHome from "./components/BakeHome";
+import AOS from "aos";
+import "aos/dist/aos.css";
+AOS.init();
 // import Books from "./components/Books";
 
 function App() {
   let Component;
-  console.log(window.location)
   switch (window.location.pathname) {
     case "/":
       Component = <Featured />;
