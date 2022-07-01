@@ -70,7 +70,8 @@
   font-size: 16px;
   text-align: center;
 }
-.videoContainerSingle, videoContainerMultiple {
+.videoContainerSingle,
+videoContainerMultiple {
   display: flex;
   align-items: center;
   width: 100%;
@@ -79,7 +80,7 @@
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  margin-top: 50px;
+  margin-top: 60px;
 }
 .videoParentSingle {
   max-width: 100%;
@@ -87,7 +88,7 @@
   display: flex;
   justify-content: center;
 }
-.flourPhoto{
+.flourPhoto {
   width: 60%;
   max-width: 592px;
   position: absolute;
@@ -126,6 +127,44 @@
   max-width: 50px;
   margin: 0 10px;
   margin-bottom: 20px;
+}
+
+.buyMeCoffee {
+  display: flex;
+  flex-flow: row nowrap;
+  padding: 0px 20px;
+  position: absolute;
+  /* background-color: aquamarine; */
+  width: 100%;
+  justify-content: center;
+  z-index: 0;
+  margin-top: 100px;
+  height: 150px;
+  align-items: baseline;
+  margin-left: 100px;
+}
+.questionPrompt {
+  font-family: 'Caveat', cursive;
+  color: var(--copper-rose);
+  font-size: 25px;
+}
+.linkToBuy {
+  display: flex;
+  flex-flow: row nowrap;
+  height: 150px;
+  align-items: baseline;
+  justify-content: flex-start;
+}
+.linkToBuy p {
+  font-family: 'Caveat', cursive;
+  color: var(--copper-rose);
+  z-index: 1;
+  margin-left: -40px;
+  font-size: 25px;
+}
+.coffeeCup {
+  width: 110px;
+  z-index: 0;
 }
 
 @media only screen and (max-width: 450px) {

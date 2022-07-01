@@ -62,8 +62,8 @@ input[type="search"],
 input[type="tel"]:focus,
 input[type="color"]:focus,
 .uneditable-input:focus {
-  border-color: var(--copper-rose);
-  color: var(--copper-rose);
+  border-color:[insert color here];
+  color:[insert color here];
   outline: 0 none;
 }
 .searchIcon {

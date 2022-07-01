@@ -1,6 +1,8 @@
 import "../assets/modules/About.css";
+import "../assets/modules/Coffee.css";
 import famPhoto from "../assets/photos/about/momnbabe.JPG";
 import flour from "../assets/photos/about/flour.png";
+import coffee from "../assets/photos/about/coffee.png";
 import instagram from "../assets/photos/logos/instagram.png";
 import facebook from "../assets/photos/logos/facebook.png";
 import linkedIn from "../assets/photos/logos/linkedIn.png";
@@ -128,18 +130,66 @@ export default function About() {
         <div className="col-6 connectDiv" data-aos="zoom-out-up">
           <h1>Let's Connect!</h1>
           <div className="iconParent">
-            <img
-              alt="Instagram Icon"
-              src={instagram}
-              className="logoIcons"
-            ></img>
-            <img alt="Facebook Icon" src={facebook} className="logoIcons"></img>
-            <img alt="LinkedIn Icon" src={linkedIn} className="logoIcons"></img>
-            <img alt="Email icon" src={email} className="logoIcons"></img>
+            <a href="https://www.linkedin.com/in/celeste-a-moore-22a036204/">
+              <img
+                alt="LinkedIn Icon"
+                src={linkedIn}
+                className="logoIcons"
+              ></img>
+            </a>
+            <a href="mailto: celestealexmoore@gmail.com">
+              {" "}
+              <img alt="Email icon" src={email} className="logoIcons"></img>
+            </a>
+            <a href="https://www.instagram.com/celeste.a.moore/">
+              <img
+                alt="Instagram Icon"
+                src={instagram}
+                className="logoIcons"
+              ></img>
+            </a>
+            {/* <img alt="Facebook Icon" src={facebook} className="logoIcons"></img> */}
           </div>
           <p>I always love answering a good baking question.</p>
         </div>
       </div>
+
+      <div className="buyMeCoffee">
+        <div className="questionPrompt">Like all the free content?</div>
+
+        <div className="linkToBuy">
+          <img
+            alt="Link to buy me Coffee"
+            src={coffee}
+            className="coffeeCup"
+          ></img>
+          <p>Buy me coffee.</p>
+        </div>
+      </div>
+
+      <div className="coffeeContainer">
+        <div className="coffee-header">
+          <div className="coffee-header__buttons coffee-header__button-one"></div>
+          <div className="coffee-header__buttons coffee-header__button-two"></div>
+          <div className="coffee-header__display"></div>
+          <div className="coffee-header__details"></div>
+        </div>
+        <div className="coffee-medium">
+          <div className="coffee-medium__exit"></div>
+          <div className="coffee-medium__arm"></div>
+          <div className="coffee-medium__liquid"></div>
+          <div className="coffee-medium__smoke coffee-medium__smoke-one"></div>
+          <div className="coffee-medium__smoke coffee-medium__smoke-two"></div>
+          <div className="coffee-medium__smoke coffee-medium__smoke-three"></div>
+          <div className="coffee-medium__smoke coffee-medium__smoke-for"></div>
+          <div className="coffee-medium__cup"></div>
+        </div>
+        <div className="coffee-footer"></div>
+
+        
+      </div>
+
+     
     </div>
   );
 }
