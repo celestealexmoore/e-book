@@ -21,6 +21,8 @@ import page18 from "../assets/photos/baking-at-home/18.png";
 export default function BakeHome() {
   return (
     <div className="container-fluid wholeContainer">
+      <div class="elfsight-app-c861a674-3416-4369-b0f7-bdc5d8a0c3d9"></div>
+
       <div className="row ">
         <div className="col-12 d-flex justify-content-center">
           <img alt="" className="pageStyle" src={page1}></img>
@@ -76,4 +78,4 @@ export default function BakeHome() {
       </div>
     </div>
   );
-};
+}

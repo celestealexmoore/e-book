@@ -1,0 +1,66 @@
+.flourPhoto {
+  width: 60%;
+  max-width: 592px;
+  position: absolute;
+  z-index: 0;
+}
+.connectDiv {
+  padding: 20px;
+  border: 1px solid var(--old-mauve);
+  background-color: white;
+  margin: 175px 0;
+  min-width: 350px;
+  height: fit-content;
+  align-self: center;
+  z-index: 1;
+}
+.connectDiv h1 {
+  align-self: center;
+  font-family: "Nuosu SIL", serif;
+  color: var(--old-mauve);
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+.connectDiv p {
+  font-family: "Nuosu SIL", serif, monospace;
+  color: var(--old-mauve);
+  font-size: 16px;
+  text-align: center;
+}
+.iconParent {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+}
+.logoIcons {
+  max-width: 50px;
+  margin: 0 10px;
+  margin-bottom: 20px;
+}
+.buyCoffeeBtn{
+  display: flex;
+  flex-flow: row nowrap;
+  background-color: var(--copper-rose);
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 20px;
+  height:fit-content;
+  align-self: center;
+  margin-top: 50px;
+  margin-left: 60px;
+}
+.buyCoffeeBtn p{
+  color: white;
+  align-self: center;
+  font-family: "Nuosu SIL", serif, monospace;
+}
+.coffeeCup {
+  width: 40px;
+}
+
+@media only screen and (max-width: 450px) {
+  .flourPhoto {
+    display: none;
+  }
+}

@@ -38,14 +38,19 @@
   margin-bottom: 30px;
   font-family: 'Caveat', cursive;
   color: var(--copper-rose);
-  /* color: var(--old-mauve); */
   font-size: 25px;
 }
 .readMore, .readMoreBtm {
-  border: 2px solid var(--navy);
+  border: 2px solid var(--old-mauve);
   width: fit-content;
   padding: 8px 20px;
-  color: var(--navy);
+  color: var(--old-mauve);
+  border-radius: 30px;
+}
+.readMore:hover {
+  border: 2px solid var(--copper-rose);
+  color: var(--copper-rose);
+  box-shadow: 2px 3px 10px 1px rgba(105, 105, 105, 0.8);
 }
 .bottomFeature {
   margin: 100px 0px;

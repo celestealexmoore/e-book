@@ -1,12 +1,18 @@
 .wholeContainer {
     background-color: var(--off-white);
     padding: 30px;
-    overflow-x: hidden;
+    /* width: 70%; */
 }
 
 .pageStyle {
     border: 1px solid var(--dark-gray);
-    max-height: 50rem;
-    object-fit: contain;
+ 
+    height: 400px;
+    /* max-height: 50rem;
+    object-fit: contain; */
     margin-bottom: 20px;
+}
+
+.row {
+    max-width: 100%;
 }

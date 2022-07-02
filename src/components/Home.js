@@ -1,4 +1,4 @@
-import "../assets/modules/Featured.css";
+import "../assets/modules/Home.css";
 import bookTrio from "../assets/photos/books.png";
 import leftDiv from "../assets/photos/leftDiv.png";
 import rightDiv from "../assets/photos/rightDiv.png";
@@ -35,7 +35,7 @@ const Featured = () => {
               grief.
               <br/>
             </p>
-            <button className="readMore">READ MORE</button>
+            <a href="./About"><button className="readMore">READ MORE</button></a>
           </div>
         </div>
       </div>

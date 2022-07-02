@@ -1,12 +1,5 @@
 import "../assets/modules/About.css";
-import "../assets/modules/Coffee.css";
 import famPhoto from "../assets/photos/about/momnbabe.JPG";
-import flour from "../assets/photos/about/flour.png";
-import coffee from "../assets/photos/about/coffee.png";
-import instagram from "../assets/photos/logos/instagram.png";
-import facebook from "../assets/photos/logos/facebook.png";
-import linkedIn from "../assets/photos/logos/linkedIn.png";
-import email from "../assets/photos/logos/email.png";
 import vid1 from "../assets/videos/vid1.mp4";
 import vid2 from "../assets/videos/vid2.mp4";
 import vid3 from "../assets/videos/vid3.mp4";
@@ -20,7 +13,12 @@ import vid10 from "../assets/videos/vid10.mp4";
 import vid11 from "../assets/videos/vid11.mp4";
 import vid12 from "../assets/videos/vid12.mp4";
 import bakingLoop from "../assets/videos/bakingLoopLg.mp4";
-// import sketchArt from "../assets/photos/about/chefClothes.png";
+import chefClothes from "../assets/photos/about/chefClothes.png";
+import ovenMitt from "../assets/photos/about/ovenMitt.png";
+import oven from "../assets/photos/about/oven.png";
+import onesie from "../assets/photos/about/onesie.png";
+import babyBottle from "../assets/photos/about/babyBottle.png";
+import measuringCup from "../assets/photos/about/measuringCup.png";
 // import wheat from "../assets/photos/about/wheat.png";
 // import eggs from "../assets/photos/about/eggs.png";
 
@@ -69,43 +67,81 @@ export default function About() {
         </div>
       </div>
 
+      {/* <div className="sketchedArt">
+      <img
+          alt="An oven with smoke coming out of it"
+          src={oven}
+          className="oven"
+        ></img>
+              <img
+          alt="An oven mitt"
+          src={ovenMitt}
+          className="ovenMitt"
+        ></img>
+              <img
+          alt="A pair of Chef hats"
+          src={chefClothes}
+          className="chefClothes"
+        ></img>
+              <img
+          alt="A baby's bottle"
+          src={babyBottle}
+          className="bottle"
+        ></img>
+        <img
+          alt="A baby onesie"
+          src={onesie}
+          className="onesie"
+        ></img>
+      </div> */}
+
+      <div className="svgBorder">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+          <path
+            fill="#E6E6E6"
+            fill-opacity="1"
+            d="M0,96L80,96C160,96,320,96,480,112C640,128,800,160,960,176C1120,192,1280,192,1360,192L1440,192L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"
+          ></path>
+        </svg>
+      </div>
+
       {/* multiple videos show on larger devices */}
       <div className="videoContainerMultiple">
         <div className="container-fluid videoParentMultiple">
-          <video autoPlay muted loop id="myVideo">
+          <video autoPlay muted loop id="myVideo" data-aos="fade-up">
             <source src={vid1} type="video/mp4" />
           </video>
-          <video autoPlay muted loop id="myVideo">
+          <video autoPlay muted loop id="myVideo" data-aos="fade-up">
             <source src={vid2} type="video/mp4" />
           </video>
-          <video autoPlay muted loop id="myVideo">
+          <video autoPlay muted loop id="myVideo" data-aos="fade-up">
             <source src={vid3} type="video/mp4" />
           </video>
-          <video autoPlay muted loop id="myVideo">
+          <video autoPlay muted loop id="myVideo" data-aos="fade-up">
             <source src={vid4} type="video/mp4" />
           </video>
-          <video autoPlay muted loop id="myVideo">
+          <video autoPlay muted loop id="myVideo" data-aos="fade-up">
             <source src={vid5} type="video/mp4" />
           </video>
-          <video autoPlay muted loop id="myVideo">
+          <video autoPlay muted loop id="myVideo" data-aos="fade-up">
             <source src={vid6} type="video/mp4" />
           </video>
-          <video autoPlay muted loop id="myVideo">
+          <video autoPlay muted loop id="myVideo" data-aos="fade-up">
             <source src={vid7} type="video/mp4" />
           </video>
-          <video autoPlay muted loop id="myVideo">
+          <video autoPlay muted loop id="myVideo" data-aos="fade-up">
             <source src={vid8} type="video/mp4" />
           </video>
-          <video autoPlay muted loop id="myVideo">
+          <video autoPlay muted loop id="myVideo" data-aos="fade-up">
             <source src={vid9} type="video/mp4" />
           </video>
-          <video autoPlay muted loop id="myVideo">
+          <video autoPlay muted loop id="myVideo" data-aos="fade-up">
             <source src={vid10} type="video/mp4" />
           </video>
-          <video autoPlay muted loop id="myVideo">
+          <video autoPlay muted loop id="myVideo" data-aos="fade-up">
             <source src={vid11} type="video/mp4" />
           </video>
-          <video autoPlay muted loop id="myVideo">
+          <video autoPlay muted loop id="myVideo" data-aos="fade-up">
             <source src={vid12} type="video/mp4" />
           </video>
         </div>
@@ -123,73 +159,6 @@ export default function About() {
           </video>
         </div>
       </div>
-
-      <div className="container-fluid connectInfo d-flex justify-content-center">
-        <img alt="flour" src={flour} className="flourPhoto"></img>
-
-        <div className="col-6 connectDiv" data-aos="zoom-out-up">
-          <h1>Let's Connect!</h1>
-          <div className="iconParent">
-            <a href="https://www.linkedin.com/in/celeste-a-moore-22a036204/">
-              <img
-                alt="LinkedIn Icon"
-                src={linkedIn}
-                className="logoIcons"
-              ></img>
-            </a>
-            <a href="mailto: celestealexmoore@gmail.com">
-              {" "}
-              <img alt="Email icon" src={email} className="logoIcons"></img>
-            </a>
-            <a href="https://www.instagram.com/celeste.a.moore/">
-              <img
-                alt="Instagram Icon"
-                src={instagram}
-                className="logoIcons"
-              ></img>
-            </a>
-            {/* <img alt="Facebook Icon" src={facebook} className="logoIcons"></img> */}
-          </div>
-          <p>I always love answering a good baking question.</p>
-        </div>
-      </div>
-
-      <div className="buyMeCoffee">
-        <div className="questionPrompt">Like all the free content?</div>
-
-        <div className="linkToBuy">
-          <img
-            alt="Link to buy me Coffee"
-            src={coffee}
-            className="coffeeCup"
-          ></img>
-          <p>Buy me coffee.</p>
-        </div>
-      </div>
-
-      <div className="coffeeContainer">
-        <div className="coffee-header">
-          <div className="coffee-header__buttons coffee-header__button-one"></div>
-          <div className="coffee-header__buttons coffee-header__button-two"></div>
-          <div className="coffee-header__display"></div>
-          <div className="coffee-header__details"></div>
-        </div>
-        <div className="coffee-medium">
-          <div className="coffee-medium__exit"></div>
-          <div className="coffee-medium__arm"></div>
-          <div className="coffee-medium__liquid"></div>
-          <div className="coffee-medium__smoke coffee-medium__smoke-one"></div>
-          <div className="coffee-medium__smoke coffee-medium__smoke-two"></div>
-          <div className="coffee-medium__smoke coffee-medium__smoke-three"></div>
-          <div className="coffee-medium__smoke coffee-medium__smoke-for"></div>
-          <div className="coffee-medium__cup"></div>
-        </div>
-        <div className="coffee-footer"></div>
-
-        
-      </div>
-
-     
     </div>
   );
 }
