@@ -24,7 +24,7 @@
 
 ## Media
 
-![Photo 1](./src/assets/photos/readMePhotos/eBookVid.webm)
+![Photo 1](./src/assets/photos/readMePhotos/eBookVid.gif)
 
 ## Deployed Site
 
