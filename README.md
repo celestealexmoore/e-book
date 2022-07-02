@@ -3,6 +3,7 @@
 # e-book
 
 ### _This is a website I created for my Facebook and Instagram connections to be able to access my recipe content in free, short e-books._
+
 </div>
 
 ## Table of Contents
@@ -23,13 +24,14 @@
 
 ## Media
 
-Coming Soon
+![Photo 1](./src/assets/photos/readMePhotos/eBookVid.webm)
 
 ## Deployed Site
 
 Coming Soon
 
 ## Features
+
     - Single-page application built with HTML, CSS, Bootstrap/ Bootstrap Icons JavaScript, React.js and Canva (for all artistic elements).
 
 ## Contributors
