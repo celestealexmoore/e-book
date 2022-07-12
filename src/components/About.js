@@ -1,4 +1,4 @@
-import "../assets/modules/About.css";
+import "../assets/css-styles/About.css";
 import famPhoto from "../assets/photos/about/momnbabe.JPG";
 import vid1 from "../assets/videos/vid1.mp4";
 import vid2 from "../assets/videos/vid2.mp4";

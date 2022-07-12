@@ -1,0 +1,181 @@
+.featuredEl {
+  background-color: var(--off-white);
+  height: auto;
+  padding: 30px;
+}
+
+.books {
+  display: flex;
+  justify-content: center;
+}
+
+.bookTrio {
+  width: 550px;
+  height: 450px;
+  object-fit: cover;
+}
+
+.featuredText {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  min-width: 370px;
+}
+
+.featuredTitle {
+  padding: 0;
+  font-family: "Playfair Display SC", serif;
+  color: var(--old-mauve);
+  font-size: 60px;
+  letter-spacing: 2.5px;
+  margin-bottom: 30px;
+}
+
+.lineBreak {
+  width: 100px;
+  height: 0px;
+  padding: 0;
+  border: 0.5px solid var(--old-mauve);
+  margin-bottom: 30px;
+}
+
+.description {
+  padding: 0;
+  margin-bottom: 30px;
+  font-family: "Caveat", cursive;
+  color: var(--copper-rose);
+  font-size: 25px;
+}
+
+.readMore {
+  border: 2px solid var(--old-mauve);
+  width: fit-content;
+  padding: 8px 20px;
+  color: var(--old-mauve);
+  border-radius: 30px;
+}
+
+.readMore:hover {
+  border: 2px solid var(--copper-rose);
+  color: var(--copper-rose);
+  box-shadow: 2px 3px 10px 1px rgba(105, 105, 105, 0.8);
+}
+
+.featuredRecipesParent {
+  margin-top: 50px;
+  padding: 0;
+}
+
+.featuredRecipesTitle {
+  font-family: "Playfair Display SC", serif;
+  color: var(--copper-rose);
+  text-align: center;
+  font-size: 50px;
+  margin-bottom: 20px;
+}
+
+.featuredRow {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+.featuredInd {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.featuredPhotos {
+  max-width: 100%;
+}
+
+.featuredPhotos:hover {
+  backdrop-filter: blur(0.2px);
+  filter: blur(1px);
+  transition: 0.5s ease;
+}
+
+.featuredRecipeTitle {
+  position: relative;
+  background-color: var(--navy);
+  color: white;
+  letter-spacing: 1px;
+  font-size: 18px;
+  width: fit-content;
+  padding: 5px;
+  margin-top: -10px;
+  font-family: "Playfair Display SC", serif;
+}
+
+.bottomFeature {
+  margin-top: 100px;
+  background-color: var(--off-white);
+  padding: 40px;
+}
+
+.weeklyRecipes {
+  max-width: 350px;
+}
+
+.rightFeature {
+  display: flex;
+  flex-flow: column nowrap;
+  height: 350px;
+  justify-content: center;
+}
+
+.subscribeTitle {
+  font-family: "Playfair Display SC", serif;
+  font-size: 45px;
+  color: var(--navy);
+}
+
+.subscribeText {
+  font-size: 18px;
+  margin: 20px 0px;
+  color: var(--navy);
+}
+
+.form-control {
+  width: fit-content;
+}
+
+.submitEmail {
+  margin-top: 15px;
+  border: 2px solid var(--navy);
+  width: fit-content;
+  padding: 8px 20px;
+  color: var(--navy);
+  border-radius: 30px;
+}
+
+.submitEmail:hover {
+  border: 2px solid var(--navy);
+  color: var(--navy);
+  box-shadow: 2px 3px 10px 1px rgba(105, 105, 105, 0.8);
+}
+
+.toTopParent {
+  display: flex;
+  justify-content: center;
+}
+
+.backToTop {
+  margin: 40px 0px;
+  width: fit-content;
+  border: none;
+}
+
+.topArrow {
+  color: var(--old-mauve);
+  font-size: 40px;
+}
+
+@media only screen and (max-width: 979px) {
+  .featuredText {
+    margin-top: -90px;
+    text-align: center;
+    align-items: center;
+  }
+}

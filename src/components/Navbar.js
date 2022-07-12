@@ -1,6 +1,6 @@
 import "bootstrap-icons/font/bootstrap-icons.css";
-import Logo from "../assets/photos/logo.png";
-import "../assets/modules/Navbar.css";
+import Logo from "../assets/photos/home/logo.png";
+import "../assets/css-styles/Navbar.css";
 
 const Navbar = () => {
   return (

@@ -1,6 +1,6 @@
 // current console errors are bootstrap-related bugs.
-import "./assets/modules/reset.css";
-import "./assets/modules/index.css";
+import "./assets/css-styles/reset.css";
+import "./assets/css-styles/index.css";
 import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import About from "./components/About";

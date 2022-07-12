@@ -1,5 +1,5 @@
 import bookTrio from "../assets/photos/books.png";
-import "../assets/modules/Books.css";
+import "../assets/css-styles/Books.css";
 
 const Books = () => {
   return (

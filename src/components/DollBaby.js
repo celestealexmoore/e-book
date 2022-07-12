@@ -1,4 +1,4 @@
-import "../assets/modules/BakeHome.css";
+import "../assets/css-styles/BakeHome.css";
 import page1 from "../assets/photos/hey-doll-baby/1.png";
 import page2 from "../assets/photos/hey-doll-baby/2.png";
 import page3 from "../assets/photos/hey-doll-baby/3.png";

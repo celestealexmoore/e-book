@@ -1,7 +1,11 @@
-import "../assets/modules/Home.css";
-import bookTrio from "../assets/photos/books.png";
-import leftDiv from "../assets/photos/leftDiv.png";
-import rightDiv from "../assets/photos/rightDiv.png";
+import "../assets/css-styles/Home.css";
+import bookTrio from "../assets/photos/home/books.png";
+import weeklyRecipes from "../assets/photos/home/weeklyRecipes.png";
+import chilaquiles from "../assets/photos/home/chilaquiles.png";
+import brookies from "../assets/photos/home/brookies.png";
+import birriaPasta from "../assets/photos/home/birria-pasta.png";
+import fritters from "../assets/photos/home/fritters.png";
+import doughnuts from "../assets/photos/home/doughnuts.png";
 
 const Featured = () => {
   return (
@@ -28,30 +32,101 @@ const Featured = () => {
               <br />
               <br />
               Two Moore Books is my attempt to capture and preserve moments of
-              my life most dear to me. Here, you'll find a ton of both pastry and dinner recipes: some
-              super southern, some vegan, gluten-free, even some for lactating
-              mamas! You'll also find an array of children's books with topics
-              ranging from bedtime and potty-time routines to handling deep
-              grief.
-              <br/>
+              my life most dear to me. Here, you'll find a ton of both pastry
+              and dinner recipes: some super southern, some vegan, gluten-free,
+              even some for lactating mamas! You'll also find an array of
+              children's books with topics ranging from bedtime and potty-time
+              routines to handling deep grief.
+              <br />
             </p>
-            <a href="./About"><button className="readMore">READ MORE</button></a>
+            <a href="./About">
+              <button className="readMore">READ MORE</button>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div className="container-fluid featuredRecipesParent">
+        <h1 className="featuredRecipesTitle">Most Requested Recipes</h1>
+        <div className="row featuredRow">
+          <div className="col featuredInd">
+            <img
+              src={chilaquiles}
+              alt="Chilaquiles"
+              className="featuredPhotos"
+            ></img>
+            <div className="featuredRecipeTitle">Chilaquiles</div>
+          </div>
+
+          <div className="col featuredInd">
+            <img src={brookies} alt="Brookies" className="featuredPhotos"></img>
+            <div className="featuredRecipeTitle">Chewy Brookies</div>
+          </div>
+
+          <div className="col featuredInd">
+            <img
+              src={birriaPasta}
+              alt="Birria Pasta"
+              className="featuredPhotos"
+            ></img>
+            <div className="featuredRecipeTitle">Spicy Birria Pasta</div>
+          </div>
+
+          <div className="col featuredInd">
+            <img
+              src={fritters}
+              alt="Fried Peach Fritters"
+              className="featuredPhotos"
+            ></img>
+            <div className="featuredRecipeTitle">Fried Peach Fritters</div>
           </div>
         </div>
       </div>
 
       <div className="container-fluid bottomFeature">
-        <div className="row d-flex justify-content-around">
-          <div className="col-5 leftFeature">
-            <img src={leftDiv} alt="" className="imgLeft"></img>
-            {/* <button className="readMoreBtm">READ MORE</button> */}
+        <div className="row">
+          <div className="col-6 d-flex justify-content-center leftFeature">
+            <img src={weeklyRecipes} alt="" className="weeklyRecipes"></img>
           </div>
 
-          <div className="col-5 rightFeature">
-            <img src={rightDiv} alt="" className="imgRight"></img>
-            {/* <button className="readMoreBtm">READ MORE</button> */}
+          <div className="col-6 rightFeature">
+            <div className="subscribeTitle">Join our Clique</div>
+            <p className="subscribeText">
+              Subscribe now to get first dibs on weekly content and new book
+              releases! Enter your email, and we'll send it right over!
+            </p>
+
+            <form>
+              <div className="form-group">
+                <input
+                  type="name"
+                  className="form-control shadow bg-white rounded"
+                  id="firstName"
+                  placeholder="First Name"
+                ></input>
+              </div>
+              <div className="form-group">
+                <input
+                  type="email"
+                  className="form-control shadow bg-white rounded"
+                  id="exampleInputEmail1"
+                  aria-describedby="emailHelp"
+                  placeholder="Email"
+                ></input>
+              </div>
+
+              <button type="submit" className="submitEmail">
+                Submit
+              </button>
+            </form>
           </div>
         </div>
+      </div>
+
+      <div className="toTopParent">
+        <a href="/" className="backToTop">
+          <i class="bi bi-arrow-up topArrow"></i>
+        </a>
       </div>
     </div>
   );

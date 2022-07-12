@@ -1,4 +1,4 @@
-import "../assets/modules/Recipes.css";
+import "../assets/css-styles/Recipes.css";
 
 export default function Recipes() {
   return (
