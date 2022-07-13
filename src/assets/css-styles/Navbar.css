@@ -1,36 +1,52 @@
 .parentContainer {
-  height: 60px;
   display: flex;
   flex-flow: row nowrap;
   justify-content: space-between;
 }
+
 .titleParent {
   display: flex;
   flex-flow: row nowrap;
-}
-.logo {
-  width: 90px;
+  margin-left: 5px;
   height: 60px;
-  object-fit: cover;
+  align-items: center;
 }
+
+.logo {
+  width: 40px;
+  height: 40px;
+}
+
 .navTitle {
   font-family: "IBM Plex Serif", serif;
-  font-size: 26px;
-  margin-left: -20px;
-  align-self: center;
+  font-size: 23px;
   color: var(--navy);
+  margin-left: .5em;
+  margin-top: 10px;
 }
+
+.navUlParent {
+  height: 60px;
+}
+
 .navUl {
   display: flex;
   flex-flow: row nowrap;
+  height: 60px;
   align-items: center;
   gap: 1rem;
 }
+
 .navUl li a {
-  color: var(--navy);
+  color: var(--navy) !important;
   font-family: "Playfair Display SC", serif;
   font-size: 17px;
 }
+
+.dropdown {
+margin-left: -15px;
+}
+
 .navUl li:hover {
   text-decoration: underline;
 }
@@ -38,13 +54,41 @@
 .dropdown:hover .dropdown-menu {
   display: block;
 }
+
 .dropdown-menu {
   margin-top: 0;
 }
-.searchIcon {
-  border: none;
-  width: fit-content;
+
+.dropdown-menu a:active {
+ background-color: var(--copper-rose) !important;
+ color: white !important;
 }
+
+.searchBar {
+  margin-right: 1em;
+}
+
+/* .searchIcon {
+  border: var(--dark-gray);
+  width: fit-content
+}
+
 .searchIcon:active {
-  background-color: var(--platinum);
+  background-color: var(--platinum) !important;
+} */
+
+.hamburgerMenuParent {
+  display: none;
+}
+
+
+@media screen and (max-width: 883px) {
+  .navUl {
+    display: none;
+  }
+  
+  .hamburgerMenuParent {
+    display: block;
+    padding: 12px;
+  }
 }

@@ -13,14 +13,6 @@ import vid10 from "../assets/videos/vid10.mp4";
 import vid11 from "../assets/videos/vid11.mp4";
 import vid12 from "../assets/videos/vid12.mp4";
 import bakingLoop from "../assets/videos/bakingLoopLg.mp4";
-import chefClothes from "../assets/photos/about/chefClothes.png";
-import ovenMitt from "../assets/photos/about/ovenMitt.png";
-import oven from "../assets/photos/about/oven.png";
-import onesie from "../assets/photos/about/onesie.png";
-import babyBottle from "../assets/photos/about/babyBottle.png";
-import measuringCup from "../assets/photos/about/measuringCup.png";
-// import wheat from "../assets/photos/about/wheat.png";
-// import eggs from "../assets/photos/about/eggs.png";
 
 export default function About() {
   return (
@@ -66,34 +58,6 @@ export default function About() {
           </div>
         </div>
       </div>
-
-      {/* <div className="sketchedArt">
-      <img
-          alt="An oven with smoke coming out of it"
-          src={oven}
-          className="oven"
-        ></img>
-              <img
-          alt="An oven mitt"
-          src={ovenMitt}
-          className="ovenMitt"
-        ></img>
-              <img
-          alt="A pair of Chef hats"
-          src={chefClothes}
-          className="chefClothes"
-        ></img>
-              <img
-          alt="A baby's bottle"
-          src={babyBottle}
-          className="bottle"
-        ></img>
-        <img
-          alt="A baby onesie"
-          src={onesie}
-          className="onesie"
-        ></img>
-      </div> */}
 
       <div className="svgBorder">
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">

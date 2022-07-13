@@ -7,19 +7,23 @@
 .books {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .bookTrio {
   width: 550px;
-  height: 450px;
-  object-fit: cover;
+}
+
+.bookTrioMobile {
+  width: 320px;
+  display: none;
 }
 
 .featuredText {
   display: flex;
   flex-flow: column nowrap;
   justify-content: center;
-  min-width: 370px;
+  min-width: 542px;
 }
 
 .featuredTitle {
@@ -67,45 +71,22 @@
 }
 
 .featuredRecipesTitle {
+  font-family: "Caveat", cursive;
+  color: var(--copper-rose);
+  align-self: center;
+  font-size: 40px;
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+.featuredRecipesTitle span {
   font-family: "Playfair Display SC", serif;
   color: var(--copper-rose);
   text-align: center;
-  font-size: 50px;
+  font-size: 25px;
   margin-bottom: 20px;
-}
-
-.featuredRow {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-}
-
-.featuredInd {
-  display: flex;
-  flex-flow: column nowrap;
-  align-items: center;
-}
-
-.featuredPhotos {
-  max-width: 100%;
-}
-
-.featuredPhotos:hover {
-  backdrop-filter: blur(0.2px);
-  filter: blur(1px);
-  transition: 0.5s ease;
-}
-
-.featuredRecipeTitle {
-  position: relative;
-  background-color: var(--navy);
-  color: white;
-  letter-spacing: 1px;
-  font-size: 18px;
-  width: fit-content;
-  padding: 5px;
-  margin-top: -10px;
-  font-family: "Playfair Display SC", serif;
+  margin-left: 10px;
+  letter-spacing: 3px;
 }
 
 .bottomFeature {
@@ -115,7 +96,7 @@
 }
 
 .weeklyRecipes {
-  max-width: 350px;
+  min-width: 310px;
 }
 
 .rightFeature {
@@ -127,7 +108,14 @@
 
 .subscribeTitle {
   font-family: "Playfair Display SC", serif;
-  font-size: 45px;
+  font-size: 40px;
+  color: var(--navy);
+  width: 327px;
+}
+
+.subscribeTitle span {
+  font-family: "Caveat", cursive;
+  font-size: 60px;
   color: var(--navy);
 }
 
@@ -156,26 +144,32 @@
   box-shadow: 2px 3px 10px 1px rgba(105, 105, 105, 0.8);
 }
 
-.toTopParent {
-  display: flex;
-  justify-content: center;
-}
-
-.backToTop {
-  margin: 40px 0px;
-  width: fit-content;
-  border: none;
-}
-
-.topArrow {
-  color: var(--old-mauve);
-  font-size: 40px;
-}
-
 @media only screen and (max-width: 979px) {
   .featuredText {
-    margin-top: -90px;
     text-align: center;
     align-items: center;
+    min-width: 100%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .rightFeature {
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 583px) {
+  .bookTrio {
+    display: none;
+  }
+
+  .bookTrioMobile {
+    display: block;
+  }
+
+  .featuredTitle {
+    margin-top: 30px;
+    font-size: 38px;
   }
 }

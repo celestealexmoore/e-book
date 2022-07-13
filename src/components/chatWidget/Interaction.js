@@ -40,7 +40,7 @@ export default function Interaction() {
     <div className="interactionParent">
       <div id="feedbackParent">
         {feedback ? (
-          <a href="#" className="feedbackDiv">
+          <a href="/Recipes" className="feedbackDiv">
             {appendedResponse}
           </a>
         ) : null}

@@ -1,13 +1,11 @@
 import "../assets/css-styles/Home.css";
 import bookTrio from "../assets/photos/home/books.png";
+import bookTrioMobile from "../assets/photos/home/booksMobile.png";
 import weeklyRecipes from "../assets/photos/home/weeklyRecipes.png";
-import chilaquiles from "../assets/photos/home/chilaquiles.png";
-import brookies from "../assets/photos/home/brookies.png";
-import birriaPasta from "../assets/photos/home/birria-pasta.png";
-import fritters from "../assets/photos/home/fritters.png";
-import doughnuts from "../assets/photos/home/doughnuts.png";
+import CarouselCards from "./CarouselCards";
+import Footer from "./Footer";
 
-const Featured = () => {
+export default function Featured() {
   return (
     <div className="fullContainer">
       <div className="container-fluid featuredEl">
@@ -17,6 +15,11 @@ const Featured = () => {
               src={bookTrio}
               alt="A trio of featured books"
               className="bookTrio"
+            ></img>
+            <img
+              src={bookTrioMobile}
+              alt="A trio of featured books"
+              className="bookTrioMobile"
             ></img>
           </div>
 
@@ -47,50 +50,29 @@ const Featured = () => {
       </div>
 
       <div className="container-fluid featuredRecipesParent">
-        <h1 className="featuredRecipesTitle">Most Requested Recipes</h1>
+        <h1 className="featuredRecipesTitle">
+          Most Requested <span>Recipes</span>
+        </h1>
         <div className="row featuredRow">
-          <div className="col featuredInd">
-            <img
-              src={chilaquiles}
-              alt="Chilaquiles"
-              className="featuredPhotos"
-            ></img>
-            <div className="featuredRecipeTitle">Chilaquiles</div>
-          </div>
-
-          <div className="col featuredInd">
-            <img src={brookies} alt="Brookies" className="featuredPhotos"></img>
-            <div className="featuredRecipeTitle">Chewy Brookies</div>
-          </div>
-
-          <div className="col featuredInd">
-            <img
-              src={birriaPasta}
-              alt="Birria Pasta"
-              className="featuredPhotos"
-            ></img>
-            <div className="featuredRecipeTitle">Spicy Birria Pasta</div>
-          </div>
-
-          <div className="col featuredInd">
-            <img
-              src={fritters}
-              alt="Fried Peach Fritters"
-              className="featuredPhotos"
-            ></img>
-            <div className="featuredRecipeTitle">Fried Peach Fritters</div>
-          </div>
+          <CarouselCards />
         </div>
       </div>
 
       <div className="container-fluid bottomFeature">
         <div className="row">
-          <div className="col-6 d-flex justify-content-center leftFeature">
-            <img src={weeklyRecipes} alt="" className="weeklyRecipes"></img>
+          <div className="col-md-6 d-flex justify-content-center">
+            <img
+              src={weeklyRecipes}
+              alt="Weekly Recipes Subscription Ad"
+              data-aos="zoom-in"
+              className="weeklyRecipes"
+            ></img>
           </div>
 
-          <div className="col-6 rightFeature">
-            <div className="subscribeTitle">Join our Clique</div>
+          <div className="col-md-6 rightFeature">
+            <div className="subscribeTitle">
+              Join our <span>Clique</span>
+            </div>
             <p className="subscribeText">
               Subscribe now to get first dibs on weekly content and new book
               releases! Enter your email, and we'll send it right over!
@@ -123,13 +105,7 @@ const Featured = () => {
         </div>
       </div>
 
-      <div className="toTopParent">
-        <a href="/" className="backToTop">
-          <i class="bi bi-arrow-up topArrow"></i>
-        </a>
-      </div>
+      <Footer />
     </div>
   );
-};
-
-export default Featured;
+}

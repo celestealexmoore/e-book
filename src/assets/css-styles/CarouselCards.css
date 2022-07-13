@@ -1,0 +1,4 @@
+.featuredPhotos {
+  max-width: 100%;
+  width: calc(100% - 5px);
+}
