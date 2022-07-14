@@ -60,6 +60,12 @@ footer ul a li:hover {
 }
 
 @media only screen and (max-width: 583px) {
+  footer {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+  
   .footerDiv {
     display: flex;
     justify-content: center;

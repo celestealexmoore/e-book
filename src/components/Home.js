@@ -8,7 +8,7 @@ import Footer from "./Footer";
 export default function Featured() {
   return (
     <div className="fullContainer">
-      <div className="container-fluid featuredEl">
+      <div className="featuredElParent">
         <div className="row">
           <div className="col books">
             <img
@@ -53,9 +53,7 @@ export default function Featured() {
         <h1 className="featuredRecipesTitle">
           Most Requested <span>Recipes</span>
         </h1>
-        <div className="row featuredRow">
           <CarouselCards />
-        </div>
       </div>
 
       <div className="container-fluid bottomFeature">

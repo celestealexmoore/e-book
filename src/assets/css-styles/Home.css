@@ -1,7 +1,8 @@
-.featuredEl {
+.featuredElParent {
   background-color: var(--off-white);
-  height: auto;
   padding: 30px;
+  display: flex;
+  justify-content: center;
 }
 
 .books {
@@ -22,7 +23,6 @@
 .featuredText {
   display: flex;
   flex-flow: column nowrap;
-  justify-content: center;
   min-width: 542px;
 }
 
@@ -68,23 +68,23 @@
 .featuredRecipesParent {
   margin-top: 50px;
   padding: 0;
+  display: flex;
+  flex-flow: column nowrap;
+  text-align: center;
 }
 
 .featuredRecipesTitle {
   font-family: "Caveat", cursive;
   color: var(--copper-rose);
-  align-self: center;
-  font-size: 40px;
+  font-size: 60px;
   margin-bottom: 30px;
-  width: 100%;
+  align-self: center;
 }
 
 .featuredRecipesTitle span {
   font-family: "Playfair Display SC", serif;
   color: var(--copper-rose);
-  text-align: center;
-  font-size: 25px;
-  margin-bottom: 20px;
+  font-size: 40px;
   margin-left: 10px;
   letter-spacing: 3px;
 }
@@ -102,7 +102,6 @@
 .rightFeature {
   display: flex;
   flex-flow: column nowrap;
-  height: 350px;
   justify-content: center;
 }
 
@@ -144,7 +143,7 @@
   box-shadow: 2px 3px 10px 1px rgba(105, 105, 105, 0.8);
 }
 
-@media only screen and (max-width: 979px) {
+@media only screen and (max-width: 1176px) {
   .featuredText {
     text-align: center;
     align-items: center;
@@ -152,10 +151,32 @@
   }
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (min-width: 768px) {
   .rightFeature {
     align-items: center;
     text-align: center;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .weeklyRecipes{
+    width: 50%;
+  }
+
+  .bottomFeature {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+
+  .subscribeTitle {
+    font-size: 30px;
+    width: fit-content;
+    align-self: center;
+  }
+
+  .subscribeTitle span {
+    font-size: 50px;
   }
 }
 
@@ -171,5 +192,13 @@
   .featuredTitle {
     margin-top: 30px;
     font-size: 38px;
+  }
+
+  .featuredRecipesTitle {
+    font-size: 35px;
+  }
+  
+  .featuredRecipesTitle span {
+    font-size: 20px;
   }
 }

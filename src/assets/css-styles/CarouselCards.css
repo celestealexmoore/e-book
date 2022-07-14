@@ -1,3 +1,9 @@
+/* .carouselParent {
+  /* display: flex !important;
+  justify-content: center !important; */
+  /* align-items: center !important; */
+/* } */ 
+
 .featuredPhotos {
   max-width: 100%;
   width: calc(100% - 5px);
