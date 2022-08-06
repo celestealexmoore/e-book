@@ -1,0 +1,14 @@
+.wholeContainer {
+    background-color: var(--off-white);
+    padding: 30px;
+}
+
+.pageStyle {
+    border: 1px solid var(--dark-gray);
+    height: 400px;
+    margin-bottom: 20px;
+}
+
+.row {
+    max-width: 100%;
+}

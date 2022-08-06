@@ -1,0 +1,32 @@
+.preferencesParent {
+  margin: -30px -10px 0 -10px;
+}
+.preferencesContentParent * {
+  font-family: "Playfair Display SC", serif;
+  color: var(--navy);
+}
+
+.preferencesContentParent {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
+  padding: 15px 0px;
+  border: 1px solid var(--platinum);
+}
+
+.pull-down {
+  background-color: white;
+  border: 1px solid rgb(194, 188, 189);
+  border-top: none;
+  margin-top: -1px;
+  margin-left: 5px;
+}
+
+.bookTitle {
+  font-family: "Playfair Display SC", serif;
+  font-size: 40px;
+  color: var(--navy);
+  margin: 20px 0px;
+  text-align: center;
+}

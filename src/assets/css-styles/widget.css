@@ -1,0 +1,61 @@
+.widgetParent {
+  display: flex;
+  flex-flow: column nowrap;
+  z-index: 3;
+}
+
+.chatWidget {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: flex-end;
+  background-color: var(--copper-rose);
+  height: 80px;
+  width: 80px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.chatWidget::before,
+.chatWidget::after {
+  position: absolute;
+  border-radius: 50%;
+  content: "";
+  z-index: -1;
+  border: 1px solid var(--copper-rose);
+  animation: pulse 2s ease-out infinite;
+  animation-play-state: paused;
+  display: none;
+}
+
+.chatWidget::before {
+  height: 87px;
+  width: 87px;
+}
+
+.chatWidget::after {
+  height: 95px;
+  width: 95px;
+}
+
+.chatWidget:hover::before,
+.chatWidget:hover::after {
+  display: block;
+  animation-play-state: running;
+}
+
+@keyframes pulse {
+  100% {
+    transform: scale(1.1);
+  }
+}
+
+.icon {
+  color: white;
+}
+
+@media only screen and (max-width: 1000px) {
+  .widgetParent{
+    display: none;
+  }
+}

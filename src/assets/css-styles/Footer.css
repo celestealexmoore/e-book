@@ -1,0 +1,105 @@
+footer {
+  width: fit-content;
+  padding: 20px;
+}
+
+footer h3 {
+  color: var(--navy);
+  font-family: "Playfair Display SC", serif;
+}
+
+footer ul li a,
+footer p {
+  color: var(--navy);
+  font-family: "Playfair Display SC", serif;
+  font-size: 16px;
+}
+
+footer ul li:hover {
+  text-decoration: underline;
+  width: fit-content;
+}
+
+footer ul li a:hover {
+  color: var(--navy);
+}
+
+.mediaIcons {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1em;
+}
+
+.homeLogoIcons {
+  max-width: 50px;
+  color: var(--navy);
+}
+
+.toTopParent {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.toTopParent p {
+  color: var(--navy);
+  font-family: "Playfair Display SC", serif;
+}
+
+.backToTop {
+  width: fit-content;
+}
+
+.topArrow {
+  color: var(--navy);
+  font-size: 30px;
+}
+
+.topArrow:hover {
+  color: var(--medium-gray);
+}
+
+@media only screen and (max-width: 583px) {
+  footer {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+  .footerDiv {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+
+  .footerUl {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+  }
+
+  .footerUl a {
+    line-height: 30px;
+  }
+
+  .mediaIcons {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid var(--navy);
+  }
+
+  .homeLogoIcons {
+    width: 40px;
+  }
+
+  .copyright {
+    margin: 0 auto;
+  }
+}

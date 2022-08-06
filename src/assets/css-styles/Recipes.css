@@ -1,0 +1,198 @@
+:root {
+  --tape-gray: #dbd8be;
+  --tape-edge-gray: #b7b49d;
+  --transparent: rgba(255, 255, 255, 0);
+}
+
+.pink {
+  --paper-color: #f2dedf;
+  --paper-dark: #c6a8a9;
+  --shadow-size: 3px;
+  --transparent: rgba(213, 224, 249, 0);
+}
+
+.paper {
+  position: relative;
+  background: linear-gradient(
+      to top right,
+      var(--paper-dark),
+      20%,
+      var(--transparent)
+    ),
+    var(--paper-color);
+  max-width: 440px;
+  min-width: 250px;
+  min-height: 130px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  font-size: 1.5rem;
+  box-shadow: var(--shadow-size) var(--shadow-size) 2px var(--paper-dark);
+  margin: auto;
+  margin-top: 50px;
+}
+
+.paper p,
+.paper p span {
+  display: flex;
+  flex-flow: column nowrap;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  font-family: "Caveat", cursive;
+  color: rgb(75, 26, 26);
+  z-index: 1;
+}
+
+.paper p span {
+  font-size: 3rem;
+}
+
+.paper::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+      var(--transparent),
+      50%,
+      var(--paper-dark),
+      51%,
+      var(--transparent)
+    ),
+    linear-gradient(
+      to right,
+      var(--transparent),
+      50%,
+      var(--paper-dark),
+      51%,
+      var(--transparent)
+    );
+}
+
+.top-tape {
+  position: absolute;
+  height: 4vmin;
+  top: -5px;
+  width: 90%;
+  background-color: var(--tape-gray);
+  border-right: 1px dotted var(--tape-edge-gray);
+  border-left: 1px dotted var(--tape-edge-gray);
+  opacity: 0.5;
+}
+
+/* .recipeContainer {
+  border-top-left-radius: 37px 90px;
+  border-top-right-radius: 23px 130px;
+  border-bottom-left-radius: 110px 19px;
+  border-bottom-right-radius: 120px 24px;
+
+  display: block;
+  position: relative;
+  border: solid 4px var(--old-mauve);
+  padding: 40px 60px;
+  max-width: 800px;
+  width: 70%;
+  margin: 100px auto 0;
+  font-size: 17px;
+  line-height: 28px;
+  transform: rotate(-1deg);
+  box-shadow: 3px 15px 8px -10px rgba(0, 0, 0, 0.3);
+  transition: all 0.13s ease-in;
+  margin-bottom: 30px;
+}
+.recipeContainer:hover {
+  transform: translateY(-10px) rotate(1deg);
+  box-shadow: 3px 15px 8px -10px rgba(0, 0, 0, 0.3);
+}
+.recipeContainer:hover .border {
+  transform: translateY(4px) rotate(-5deg);
+}
+.recipeContainer h1 {
+  font-family: "Caveat", cursive;
+  color: var(--old-mauve);
+  font-size: 50px;
+  text-align: center;
+}
+.recipeContainer p {
+  background: rgb(233, 231, 231);
+  padding: 20px;
+  border-radius: 5px;
+  color: var(--old-mauve);
+}
+.recipeContainer ul {
+  margin-top: 30px;
+}
+.recipeContainer li {
+  color: var(--old-mauve);
+}
+
+.border {
+  position: absolute;
+  transition: all 0.13s ease-in;
+}
+
+.border:before,
+.border:after {
+  font-size: 15px;
+  position: absolute;
+}
+.tl {
+  position: absolute;
+  left: -50px;
+  top: -63px;
+}
+.tl:before {
+  content: "37px";
+  left: 120px;
+  top: 30px;
+}
+.tl:after {
+  content: "140px";
+  left: 0px;
+  top: 80px;
+}
+.tr {
+  right: -50px;
+  top: -63px;
+}
+.tr:before {
+  content: "23px";
+  left: 0;
+  top: 30px;
+}
+.tr:after {
+  content: "130px";
+  left: 130px;
+  top: 80px;
+}
+.bl {
+  left: -50px;
+  bottom: -71px;
+}
+.bl:before {
+  content: "110px";
+  left: 120px;
+  top: -30px;
+}
+.bl:after {
+  content: "19px";
+  left: 0px;
+  top: -90px;
+}
+.br {
+  right: -50px;
+  bottom: -63px;
+  font-weight: 600;
+}
+.br:before {
+  content: "120px";
+  left: 0;
+  top: -30px;
+}
+.br:after {
+  content: "24px";
+  right: -10px;
+  top: -80px;
+} */

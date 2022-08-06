@@ -1,0 +1,105 @@
+.parentContainer {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+}
+
+.titleParent {
+  display: flex;
+  flex-flow: row nowrap;
+  margin-left: 5px;
+  height: 60px;
+  align-items: center;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+}
+
+.navTitle {
+  font-family: "IBM Plex Serif", serif;
+  font-size: 23px;
+  color: var(--navy);
+  margin-left: 0.5em;
+  margin-top: 10px;
+}
+
+.navUlParent {
+  height: 60px;
+}
+
+.navUl {
+  display: flex;
+  flex-flow: row nowrap;
+  height: 60px;
+  align-items: center;
+  gap: 1rem;
+}
+
+.navUl li a {
+  color: var(--navy) !important;
+  font-family: "Playfair Display SC", serif;
+  font-size: 17px;
+}
+.booksLi {
+  margin-left: 10px;
+}
+
+.dropdown {
+  margin-left: -15px;
+}
+
+.navUl li:hover {
+  text-decoration: underline;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+.dropdown-menu {
+  margin-top: 0;
+}
+
+.dropdown-menu a:active {
+  background-color: var(--copper-rose) !important;
+  color: white !important;
+}
+
+.searchBar {
+  margin-right: 1em;
+}
+
+/* .searchIcon {
+  border: var(--dark-gray);
+  width: fit-content
+}
+
+.searchIcon:active {
+  background-color: var(--platinum) !important;
+} */
+
+.hamburgerMenuParent, .hamburgerMenu {
+  display: none !important;
+  background-color: inherit !important;
+  border: none !important;
+  width: fit-content !important;
+  color: var(--navy) !important;
+}
+
+.navbar-light .navbar-toggler {
+  border: none;
+}
+
+@media screen and (max-width: 883px) {
+  .navUl {
+    display: none;
+  }
+
+  .hamburgerMenuParent,
+  .hamburgerMenu {
+    display: block !important;
+    padding: 12px;
+  }
+}

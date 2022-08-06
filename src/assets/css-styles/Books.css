@@ -1,0 +1,47 @@
+.booksParent {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.indBook {
+  padding: 20px;
+  background-color: var(--platinum);
+  margin-top: 20px;
+  display: flex;
+  width: 85%;
+  max-width: 1150px;
+}
+
+.align-left {
+  gap: 1rem;
+}
+
+.align-right {
+  flex-direction: row-reverse;
+  text-align: right;
+  gap: 1rem;
+}
+
+.bookImgParent {
+    align-self: center;
+}
+
+.bookContent h2 {
+  color: var(--old-mauve);
+  font-family: "Playfair Display SC", serif;
+}
+.bookContent p {
+  font-size: 16px;
+}
+
+
+@media only screen and (max-width: 630px) {
+  .indBook {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  }

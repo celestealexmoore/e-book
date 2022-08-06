@@ -1,0 +1,117 @@
+.aboutParentContainer {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.centerChildren {
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.aboutTitle {
+  text-align: center;
+  padding: 15px;
+  height: 250px;
+  position: absolute;
+  font-family: "Playfair Display SC", serif;
+  letter-spacing: 2.5px;
+  color: var(--platinum);
+  font-size: 40px;
+  animation: aboutTitleAnim 2s forwards;
+}
+@keyframes aboutTitleAnim {
+  0% {
+    background-color: white;
+    color: white;
+  }
+  100% {
+    background-color: var(--old-mauve);
+  }
+}
+.spaceBetween {
+  height: 100px;
+  width: 100px;
+}
+.contentParent {
+  align-items: center;
+  height: 100%;
+  margin-bottom: 50px;
+}
+.photoParent {
+  padding: 0;
+  z-index: 1;
+  max-width: 400px;
+  min-width: 320px;
+  max-height: 50%;
+}
+.famPhoto {
+  width: 100%;
+  height: 100%;
+}
+.aboutContent {
+  padding: 20px;
+  border: 1px solid var(--old-mauve);
+  background-color: white;
+  min-width: 320px;
+  z-index: 1;
+}
+.aboutContent h1 {
+  align-self: center;
+  font-family: "Nuosu SIL", serif;
+  color: var(--old-mauve);
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+.aboutContent p {
+  font-family: "Nuosu SIL", serif;
+  color: var(--old-mauve);
+  font-size: 16px;
+  text-align: center;
+}
+
+.mooreStory {
+  width: 100%;
+}
+
+.videoContainerSingle,
+videoContainerMultiple {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+.videoParentMultiple {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  background-color: var(--platinum);
+  padding-bottom: 100px;
+}
+/* .videoParentSingle {
+  max-height: 400px;
+  display: flex;
+  justify-content: center;
+  background-color: var(--platinum);
+} */
+
+@media only screen and (min-width: 924px) {
+  .videoContainerSingle, .mooreStoryMobile {
+    display: none;
+  }
+}
+@media only screen and (max-width: 924px) {
+  .videoContainerMultiple,
+  .svgBorder, .mooreStory {
+    display: none;
+  }
+  .videoContainerSingle {
+    margin-bottom: 50px;
+  }
+}
+@media only screen and (max-width: 1140px) {
+  .famPhoto {
+    margin-bottom: 20px;
+  }
+}

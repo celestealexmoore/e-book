@@ -1,0 +1,12 @@
+.wholeContainer {
+    background-color: var(--off-white);
+    padding: 30px;
+    overflow-x: hidden;
+}
+
+.pageStyle {
+    border: 1px solid var(--dark-gray);
+    max-height: 50rem;
+    object-fit: contain;
+    margin-bottom: 20px;
+}

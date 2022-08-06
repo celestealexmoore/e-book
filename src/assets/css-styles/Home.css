@@ -1,0 +1,205 @@
+.featuredElParent {
+  background-color: var(--off-white);
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+}
+
+.books {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.bookTrio {
+  width: 550px;
+}
+
+.bookTrioMobile {
+  width: 320px;
+  display: none;
+}
+
+.featuredText {
+  display: flex;
+  flex-flow: column nowrap;
+  min-width: 542px;
+}
+
+.featuredTitle {
+  padding: 0;
+  font-family: "Playfair Display SC", serif;
+  color: var(--old-mauve);
+  font-size: 60px;
+  letter-spacing: 2.5px;
+  margin-bottom: 30px;
+}
+
+.lineBreak {
+  width: 100px;
+  height: 0px;
+  padding: 0;
+  border: 0.5px solid var(--old-mauve);
+  margin-bottom: 30px;
+}
+
+.description {
+  padding: 0;
+  margin-bottom: 30px;
+  font-family: "Caveat", cursive;
+  color: var(--copper-rose);
+  font-size: 25px;
+}
+
+.readMore {
+  border: 2px solid var(--old-mauve);
+  width: fit-content;
+  padding: 8px 20px;
+  color: var(--old-mauve);
+  border-radius: 30px;
+}
+
+.readMore:hover {
+  border: 2px solid var(--copper-rose);
+  color: var(--copper-rose);
+  box-shadow: 2px 3px 10px 1px rgba(105, 105, 105, 0.8);
+}
+
+.featuredRecipesParent {
+  margin-top: 50px;
+  padding: 0;
+  display: flex;
+  flex-flow: column nowrap;
+  text-align: center;
+}
+
+.featuredRecipesTitle {
+  font-family: "Caveat", cursive;
+  color: var(--copper-rose);
+  font-size: 60px;
+  margin-bottom: 30px;
+  align-self: center;
+}
+
+.featuredRecipesTitle span {
+  font-family: "Playfair Display SC", serif;
+  color: var(--copper-rose);
+  font-size: 40px;
+  margin-left: 10px;
+  letter-spacing: 3px;
+}
+
+.bottomFeature {
+  margin-top: 100px;
+  background-color: var(--off-white);
+  padding: 40px;
+}
+
+.weeklyRecipes {
+  min-width: 310px;
+  max-width: 400px;
+}
+
+.rightFeature {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+}
+
+.subscribeTitle {
+  font-family: "Playfair Display SC", serif;
+  font-size: 40px;
+  color: var(--navy);
+  width: 327px;
+}
+
+.subscribeTitle span {
+  font-family: "Caveat", cursive;
+  font-size: 60px;
+  color: var(--navy);
+}
+
+.subscribeText {
+  font-size: 18px;
+  margin: 20px 0px;
+  color: var(--navy);
+}
+
+.form-control {
+  width: fit-content;
+}
+
+.submitEmail {
+  margin-top: 15px;
+  border: 2px solid var(--navy);
+  width: fit-content;
+  padding: 8px 20px;
+  color: var(--navy);
+  border-radius: 30px;
+}
+
+.submitEmail:hover {
+  border: 2px solid var(--navy);
+  color: var(--navy);
+  box-shadow: 2px 3px 10px 1px rgba(105, 105, 105, 0.8);
+}
+
+@media only screen and (max-width: 1176px) {
+  .featuredText {
+    text-align: center;
+    align-items: center;
+    min-width: 100%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .rightFeature {
+    align-items: center;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .weeklyRecipes{
+    width: 50%;
+  }
+
+  .bottomFeature {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+  }
+
+  .subscribeTitle {
+    font-size: 30px;
+    width: fit-content;
+    align-self: center;
+  }
+
+  .subscribeTitle span {
+    font-size: 50px;
+  }
+}
+
+@media only screen and (max-width: 583px) {
+  .bookTrio {
+    display: none;
+  }
+
+  .bookTrioMobile {
+    display: block;
+  }
+
+  .featuredTitle {
+    margin-top: 30px;
+    font-size: 38px;
+  }
+
+  .featuredRecipesTitle {
+    font-size: 35px;
+  }
+  
+  .featuredRecipesTitle span {
+    font-size: 20px;
+  }
+}

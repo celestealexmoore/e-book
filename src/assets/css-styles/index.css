@@ -1,0 +1,44 @@
+:root {
+  --navy: #214150;
+  --copper-rose: #a26769;
+  --old-mauve: #6d2e46;
+  --platinum: #e6e6e6;
+  --off-white: #f3f0f0;
+  --ming: #2a6c7a;
+  --tangerine: #ffa190;
+  --mustard: #d3ab25;
+  --light-gray: rgb(197, 196, 196);
+  --medium-gray: rgb(167, 167, 167);
+  --dark-gray: rgb(94, 94, 94);
+  --dark-mode: rgb(57, 53, 53);
+  --dark-mode-rose: #bf6d70;
+}
+
+/* bootstrap adjustment for default input blue glow. Reset to my preferences.*/
+textarea:focus,
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+input[type="name"]:focus,
+input[type="number"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="search"]:focus,
+input[type="search"],
+input[type="tel"]:focus,
+input[type="color"]:focus,
+.uneditable-input:focus {
+  border-color: var(--light-gray);
+  color: black;
+  outline: 0 none;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border-color: var(--dark-gray);
+}
