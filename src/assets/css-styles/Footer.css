@@ -42,6 +42,9 @@ footer ul li a:hover {
   flex-flow: column nowrap;
   justify-content: center;
   align-items: center;
+  background-color: white;
+  border: none;
+  margin: 0 auto;
 }
 
 .toTopParent p {

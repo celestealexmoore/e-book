@@ -4,6 +4,11 @@ import linkedIn from "../assets/photos/home/icons/linkedIn.png";
 import email from "../assets/photos/home/icons/email.png";
 
 export default function Footer() {
+  
+  function componentDidMount() {
+    window.scrollTo(0, 0);
+  }
+
   return (
     <>
       <footer className="container-fluid">
@@ -48,12 +53,12 @@ export default function Footer() {
         <p className="copyright">©2023 Two Moore Books. All Rights Reserved.</p>
       </footer>
 
-      <div className="toTopParent">
-        <a href="/" className="backToTop">
+      <button className="toTopParent" onClick={componentDidMount}>
+        <div className="backToTop">
           <i className="bi bi-arrow-up topArrow"></i>
-        </a>
+        </div>
         <p>Back to Top</p>
-      </div>
+      </button>
     </>
   );
 }
