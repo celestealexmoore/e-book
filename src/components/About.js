@@ -1,5 +1,5 @@
 import "../assets/css-styles/About.css";
-import famPhoto from "../assets/photos/about/momnbabe2.jpg";
+import famPhoto from "../assets/photos/about/momnbabe4.jpg";
 import vid1 from "../assets/videos/vid1.mp4";
 import vid2 from "../assets/videos/vid2.mp4";
 import vid3 from "../assets/videos/vid3.mp4";
@@ -14,8 +14,8 @@ import vid11 from "../assets/videos/vid11.mp4";
 import vid12 from "../assets/videos/vid12.mp4";
 // import bakingLoop from "../assets/videos/bakingLoopLg.mp4";
 import Footer from "./Footer";
-import mooreStory from "../assets/photos/about/mooreStory.png"
-import mooreStoryMobile from "../assets/photos/about/mooreStoryMobile.png"
+// import mooreStory from "../assets/photos/about/mooreStory.png"
+// import mooreStoryMobile from "../assets/photos/about/mooreStoryMobile.png"
 
 export default function About() {
   return (
@@ -37,27 +37,34 @@ export default function About() {
           <div className="col-5 aboutContent" data-aos="fade-left">
             <h1> Meet the Two Moore's</h1>
             <p>
-              A former Pastry Chef, I started writing a book in 2020, (while
-              pregnant), of recipes I've been perfecting for over 10 years. I
-              told myself that pregnancy would mark the end of my culinary
-              career— something about long hours on my feet, lifting heavy
-              things for 8-21 hours a day, toxic work environments (simply due
-              to our collectively underpaid and overworked dispositions)... I
-              mean the list goes on.
+              <span id="aboutSpan">Well, 3 Moore's to be exact.</span>
               <br />
               <br />
-              This website is my way of keeping that looooong, satisfying exhale of
-              retirement frozen in time. I get to go back to creating for the
-              fun of it, and you get to peruse through my best work- sharing
+              A former Pastry Chef, I started writing a book at the beginning of the pandemic shut-down.
+              I was pregnant in a quiet apartment and couldn't sit still, 
+              so I opted to create a formal memento of the recipes I've been perfecting for over 15 years. 
+              <br />
+              <br />
+              I told myself that pregnancy would mark the end of my culinary
+              career. This website is my way of keeping that looooong, satisfying exhale of
+              retirement frozen in time, and it's also a haven for my creative writing energy. 
+              <br />
+              <br />
+              I get to go back to creating for the fun of it, 
+              and you get to peruse through my best culinary work- sharing
               these gems with your family and friends as much as I've
-              enjoyed creating those table-gathering moments for you all.
+              enjoyed creating table-gathering moments for you all.
+              <br />
+              <br />
+
+              For video recipe content, find me on <a href="https://www.instagram.com/celeste.a.moore/">Instagram</a> or <a href="https://www.tiktok.com/@celeste.a.moore">TikTok!</a>
             </p>
           </div>
         </div>
       </div>
-
+{/* 
       <img className="mooreStory" src={mooreStory}></img>
-      <img className="mooreStoryMobile" src={mooreStoryMobile}></img>
+      <img className="mooreStoryMobile" src={mooreStoryMobile}></img> */}
       
 
       <svg

@@ -53,12 +53,13 @@ export default function Featured() {
           </div>
 
           <div className="col featuredText">
-            <h1 className="featuredTitle">This Month</h1>
+            <h1 className="featuredTitle">The Wait is Over</h1>
             <div className="lineBreak"></div>
             <p className="description">
-              So you've been following me on Instagram for like 5 years now and
-              you're all, "How's that book coming along, Brian?" Well, it's
-              finally here. And it's worth the wait! You're able to access all
+              So you've been keeping up with my Instagram for like 5 years now and
+              you're all, 
+              <span id="audienceNarration"> "How's that book coming along, Brian?"</span> 
+              Well, it's finally here. And it's worth the wait! You're able to access all
               my time-consuming content for the free...and I'm so happy to share
               these gifts with you!
               <br />

@@ -45,7 +45,7 @@ export default function Footer() {
           </div>
         </div>
 
-        <p className="copyright">©2022 Two Moore Books. All Rights Reserved.</p>
+        <p className="copyright">©2023 Two Moore Books. All Rights Reserved.</p>
       </footer>
 
       <div className="toTopParent">

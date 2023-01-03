@@ -30,7 +30,7 @@
   padding: 0;
   font-family: "Playfair Display SC", serif;
   color: var(--old-mauve);
-  font-size: 60px;
+  font-size: 50px;
   letter-spacing: 2.5px;
   margin-bottom: 30px;
 }
@@ -43,12 +43,18 @@
   margin-bottom: 30px;
 }
 
-.description {
+.description, .description span {
   padding: 0;
   margin-bottom: 30px;
+  font-family: 'PT Sans', sans-serif;
+  color: var(--old-mauve);
+  font-size: 18px;
+}
+
+.description span {
   font-family: "Caveat", cursive;
-  color: var(--copper-rose);
-  font-size: 25px;
+  margin-right: 10px;
+  font-size: 23px;
 }
 
 .readMore {
@@ -57,6 +63,7 @@
   padding: 8px 20px;
   color: var(--old-mauve);
   border-radius: 30px;
+  font-family: 'PT Sans', sans-serif;
 }
 
 .readMore:hover {
